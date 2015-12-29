@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Spinner from 'react-mdl/lib/Spinner';
 import Button from 'react-mdl/lib/Button';
 // import { Link } from 'react-router';
 // import { CounterButton, GithubButton } from 'components';
@@ -13,7 +12,6 @@ export default class Home extends Component {
     return (
       <div>
         <h2>Home Page</h2>
-        <Spinner />
         <Button raised ripple>Button</Button>
       </div>
     );
