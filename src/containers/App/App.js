@@ -56,27 +56,27 @@ export default class App extends Component {
     const styles = require('./App.scss');
     return (
       <div className={styles.app}>
-          <Layout fixedHeader>
-              <Header title={<span><span style={{ color: '#ddd' }}>Area / </span><strong>The Title</strong></span>}>
-                  <Navigation>
-                      <a href="">Link</a>
-                  </Navigation>
-              </Header>
-              <Drawer title="Title">
-                  <Navigation>
-                      <a href="">Drawer Link 1</a>
-                      <a href="">Drawer Link 2</a>
-                      <a href="">Drawer Link 3</a>
-                      <a href="">Drawer Link 4</a>
-                  </Navigation>
-              </Drawer>
-              <Content>
-                <DocumentMeta {...config.app}/>
-                <div className={styles.appContent}>
-                  {this.props.children}
-                </div>
-              </Content>
-          </Layout>
+        <Layout fixedHeader fixedDrawer>
+          <Header title={<strong>The Title</strong>}>
+            <Navigation>
+              <a href="#">Link</a>
+            </Navigation>
+          </Header>
+          <Drawer title="Title">
+            <Navigation>
+              <a href="#">Drawer Link 1</a>
+              <a href="#">Drawer Link 2</a>
+              <a href="#">Drawer Link 3</a>
+              <a href="#">Drawer Link 4</a>
+            </Navigation>
+          </Drawer>
+          <Content>
+            <DocumentMeta {...config.app}/>
+            <div className={styles.appContent}>
+              {this.props.children}
+            </div>
+          </Content>
+        </Layout>
       </div>
     );
   }
