@@ -1,3 +1,7 @@
+# Fork of React Redux Universal Hot Example
+
+Copied boilerplate, stripped out bootstrap/ fontawesome loaders and replaced them with react-mdl/ material icons.
+
 # React Redux Universal Hot Example
 
 [![build status](https://img.shields.io/travis/erikras/react-redux-universal-hot-example/master.svg?style=flat-square)](https://travis-ci.org/erikras/react-redux-universal-hot-example)
@@ -30,7 +34,6 @@ This is a starter boilerplate app I've put together using the following technolo
 * [lru-memoize](https://github.com/erikras/lru-memoize) to speed up form validation
 * [multireducer](https://github.com/erikras/multireducer) to combine single reducers into one key-based reducer
 * [style-loader](https://github.com/webpack/style-loader), [sass-loader](https://github.com/jtangelder/sass-loader) and [less-loader](https://github.com/webpack/less-loader) to allow import of stylesheets in plain css, sass and less,
-* [bootstrap-sass-loader](https://github.com/shakacode/bootstrap-sass-loader) and [font-awesome-webpack](https://github.com/gowravshekar/font-awesome-webpack) to customize Bootstrap and FontAwesome
 * [react-document-meta](https://github.com/kodyl/react-document-meta) to manage title and meta tag information on both server and client
 * [webpack-isomorphic-tools](https://github.com/halt-hammerzeit/webpack-isomorphic-tools) to allow require() work for statics both on client and server
 * [mocha](https://mochajs.org/) to allow writing unit tests for the project.
