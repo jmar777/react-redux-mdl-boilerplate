@@ -2,6 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import ReactDOM from 'react-dom/server';
 import serialize from 'serialize-javascript';
 import DocumentMeta from 'react-document-meta';
+// require('MDL.scss');
 
 /**
  * Wrapper component containing HTML metadata and boilerplate tags.
@@ -31,7 +32,6 @@ export default class Html extends Component {
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           {/* MDL styles */}
-          <link rel="stylesheet" href="/scripts/react-mdl/material.min.css" />
           <script src="/scripts/react-mdl/material.min.js"></script>
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
           {/* styles (will be present only in production with webpack extract text plugin) */}
