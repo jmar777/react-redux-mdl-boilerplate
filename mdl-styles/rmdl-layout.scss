@@ -383,7 +383,7 @@
     @include material-animation-default();
 
     .mdl-layout__drawer.is-visible ~ & {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.0);
       visibility: visible;
     }
   }
