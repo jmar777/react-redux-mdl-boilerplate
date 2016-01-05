@@ -7,15 +7,16 @@ import {Grid, Cell} from 'react-mdl';
 
 export default class Home extends Component {
   render() {
-    // const styles = require('./Home.scss');
+    const styles = require('./Home.scss');
     // require the logo image both from client and server
     // const logoImage = require('./logo.png');
     return (
       <div>
-        <h2>Home Page</h2>
+        <h2 className={styles.home}>Home Page</h2>
+        <h2 className="home">Home Page Test</h2>
         <Grid>
           <Cell col={12}>
-            <Button raised ripple>Button</Button>
+            <Button raised ripple>Button 1</Button>
           </Cell>
           <Cell col={12}>
             <Button raised ripple>Button 2</Button>
